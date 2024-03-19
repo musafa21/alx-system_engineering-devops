@@ -1,0 +1,22 @@
+#!/usr/bin/env bash
+## displays the time from 00:01 to 12:59
+# The time format is HH:MM
+# The script must display the time in this format:
+# 00:01
+# 00:02
+# 00:03
+# ...
+
+hour=0
+
+while [ $hour -le 12 ]
+do
+  echo "Hour: $hour"
+  minute=1
+  while [ $minute -le 59 ]
+  do
+    echo "$minute"
+    (( minute++ ))
+  done
+  (( hour++ ))
+done
