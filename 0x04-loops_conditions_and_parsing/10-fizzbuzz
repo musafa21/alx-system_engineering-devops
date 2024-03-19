@@ -1,0 +1,22 @@
+#!/usr/bin/env bash
+# This script prints the numbers from 1 to 100,
+# but for multiples of three, prints "Fizz" instead
+# of the number, and for the multiples of five, prints "Buzz".
+# For numbers which are multiples of both three
+# and five, prints "FizzBuzz".
+
+for num in {1..100}
+do
+  if (( num % 3 == 0 && num % 5 == 0 ))
+  then
+    echo "FizzBuzz"
+  elif (( num % 3 == 0 ))
+  then
+    echo "Fizz"
+  elif (( num % 5 == 0 ))
+  then
+    echo "Buzz"
+  else
+    echo "$num"
+  fi
+done
