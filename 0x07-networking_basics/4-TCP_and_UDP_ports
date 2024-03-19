@@ -1,0 +1,6 @@
+#!/usr/bin/env bash
+# This script provides information about the listening ports on a system.
+# It displays the port number, protocol (TCP or UDP), and the process ID (PID)
+# and name of the program to which each socket belongs.
+
+netstat -l --program
